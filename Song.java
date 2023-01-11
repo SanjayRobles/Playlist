@@ -42,5 +42,30 @@ public class Song {
       * What kind of mutator (setter) methods will you need?
       */
 
+    /**
+     * Returns the length of the song
+     * @return song length in the form of (minutes.seconds)
+     */
+    public double getLength()
+    {
+        return 0;
+    }
 
+    /**
+     * Returns the name of the song
+     * @return song name
+     */
+    public String getName()
+    {
+        return name;
+    }
+
+    /**
+     * Returns the author of the song
+     * @return song author
+     */
+    public String getAuthor()
+    {
+        return author;
+    }
 }
