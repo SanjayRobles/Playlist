@@ -9,8 +9,7 @@ public class Song {
     private String author;
     private int min;
     private int sec;
-    private boolean liked;
-    private boolean disliked;
+    private int status;
 
     /**
      * Constructor-- what information needs to be given to make a Song?
@@ -21,8 +20,7 @@ public class Song {
         author = artist;
         min = minutes;
         sec = seconds;
-        liked = false;
-        disliked = false;
+        status = 0;
     }
 
     /**
@@ -50,5 +48,23 @@ public class Song {
     public String getAuthor()
     {
         return author;
+    }
+
+    /**
+     * Returns the like/dislike status of the song
+     * @return the status of the song: 0=Neutral, 1=Liked, 2=Disliked
+     */
+    public int getStatus()
+    {
+        return status;
+    }
+
+    /**
+     * Sets like/dislike status
+     * @param newStat an integer 0-2: 0=Neutral, 1=Liked, 2=Disliked
+     */
+    public void setStatus(int newStat)
+    {
+        status=newStat;
     }
 }
