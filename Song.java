@@ -5,6 +5,10 @@
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
+    String name = "This Must be the Place";
+    String author = "Talking yeads";
+    double time = 4.35;
+
 
 
 
