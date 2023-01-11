@@ -5,9 +5,10 @@
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
-    String name = "This Must be the Place";
-    String author = "Talking yeads";
-    double time = 4.35;
+    private String name = "This Must be the Place";
+    private String author = "Talking yeads";
+    private int min = 4;
+    private int sec = 35;
 
 
 
@@ -17,6 +18,16 @@ public class Song {
      * Constructor-- what information needs to be given to make a Song?
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
+    public Song (String title,String artist, int minutes, int seconds ){
+        String name = title;
+        String author = artist;
+        int min = minutes;
+        int sec = seconds;
+
+
+
+
+    }
 
 
 
