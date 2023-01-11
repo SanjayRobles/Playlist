@@ -23,6 +23,7 @@ public class Song {
         String author = artist;
         int min = minutes;
         int sec = seconds;
+        boolean liked = false;
 
 
 
