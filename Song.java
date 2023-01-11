@@ -5,50 +5,33 @@
  */
 public class Song {
     //Fields-- what information do we want each Song to store?
-    private String name = "This Must be the Place";
-    private String author = "Talking yeads";
-    private int min = 4;
-    private int sec = 35;
-
-
-
-
+    private String name;
+    private String author;
+    private int min;
+    private int sec;
+    private boolean liked;
+    private boolean disliked;
 
     /**
      * Constructor-- what information needs to be given to make a Song?
      * How will you handle 'liked' songs? It makes sense for a Song not be 'liked' by default
      */
     public Song (String title,String artist, int minutes, int seconds ){
-        String name = title;
-        String author = artist;
-        int min = minutes;
-        int sec = seconds;
-        boolean liked = false;
-
-
-
-
+        name = title;
+        author = artist;
+        min = minutes;
+        sec = seconds;
+        liked = false;
+        disliked = false;
     }
 
-
-
-
-
-     /**
-      * Methods-- what will you want each Song to do?
-      * Consider all the getter methods (getName, getArtist, etc.)
-      * You should probably have a toString method to be able to get the information for the full
-      * song easily as well!
-      * What kind of mutator (setter) methods will you need?
-      */
-
     /**
-     * Returns the length of the song
-     * @return song length in the form of (minutes.seconds)
+     * Returns the length of the song in seconds
+     * @return song length in seconds
      */
-    public double getLength()
+    public double getMins()
     {
-        return 0;
+        return (min*60+sec);
     }
 
     /**
