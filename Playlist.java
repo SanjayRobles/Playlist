@@ -56,6 +56,32 @@ public class Playlist {
         Songs.remove(nSong);
     }
 
+    public void removeUnliked()
+    {
+        for(int i=0;i<Songs.size();i++)
+        {
+            if(Songs.get(i).getStatus()==2)
+            {
+                Songs.remove(i);
+                i--;
+            }
+        }
+    }
+
+    public String getLikedSongs()
+    {
+        String ret ="";
+        for(int i=0;i<Songs.size();i++)
+        {
+            if(Songs.get(i).getStatus()==1)
+            {
+                ret=ret+Songs.get(i);
+                ret=ret+"\n";
+            }
+        }
+        return ret;
+    }
+
     public String toString()
     {
         String ret = "";
