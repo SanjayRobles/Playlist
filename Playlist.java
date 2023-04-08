@@ -50,4 +50,20 @@ public class Playlist {
             }
         }
     }
+
+    public void removeSong(Song nSong)
+    {
+        Songs.remove(nSong);
+    }
+
+    public String toString()
+    {
+        String ret = "";
+        for(int i=0;i<Songs.size();i++)
+        {
+            ret=ret+Songs.get(i);
+            ret=ret+"\n";
+        }
+        return ret;
+    }
 }
