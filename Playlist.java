@@ -82,6 +82,21 @@ public class Playlist {
         return ret;
     }
 
+    public int getTotalLen()
+    {
+        int ret=0;
+        for(int i=0;i<Songs.size();i++)
+        {
+            ret+=Songs.get(i).getSecs();
+        }
+        return ret;
+    }
+
+    public ArrayList<Song> getSongs()
+    {
+        return Songs;
+    }
+
     public String toString()
     {
         String ret = "";

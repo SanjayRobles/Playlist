@@ -25,7 +25,7 @@ public class Song {
      * Returns the length of the song in seconds
      * @return song length in seconds
      */
-    public double getMins()
+    public double getSecs()
     {
         return (sec);
     }
